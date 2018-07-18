@@ -14,7 +14,7 @@ declare namespace files {
      */
     //% blockId="files_append_line" block="file %filename|append line %text"
     //% blockExternalInputs=1 weight=90 blockGap=8 shim=files::appendLine
-    function appendLine(filename: string, text: string): void;
+    export function appendLine(filename: string, text: string): void;
 
     /**
      * Appends text to a file
@@ -23,7 +23,7 @@ declare namespace files {
      */
     //% blockId="fs_append_string" block="file %filename|append string %text"
     //% blockExternalInputs=1 weight=86 blockGap=8 shim=files::appendString
-    function appendString(filename: string, text: string): void;
+    export function appendString(filename: string, text: string): void;
 
     /**
      * Reads the content of the file to send it to serial
@@ -39,7 +39,7 @@ declare namespace files {
      */
     //% blockId="fs_remove" block="file remove %filename"
     //% weight=80 advanced=true blockGap=8 shim=files::remove
-    function remove(filename: string): void;
+    export function remove(filename: string): void;
 
     /**
      * Creates a directory
@@ -47,7 +47,7 @@ declare namespace files {
      */
     //% advanced=true weight=10
     //% blockId=files_create_directory block="files create directory %name" shim=files::createDirectory
-    function createDirectory(name: string): void;
+    export function createDirectory(name: string): void;
 
     /**
      * Reads a number settings, -1 if not found.
@@ -55,60 +55,60 @@ declare namespace files {
      */
     //% blockId=settings_read_number block="settings read number %name"
     //% weight=19 shim=files::settingsReadNumber
-    function settingsReadNumber(name: string): number;
+    export function settingsReadNumber(name: string): number;
 
     /**
      *
      */
     //% weight=0 advanced=true shim=files::fsOpen
-    function fsOpen(path: string): number;
+    export function fsOpen(path: string): number;
 
     /**
      *
      */
     //% weight=0 advanced=true shim=files::fsFlush
-    function fsFlush(fd: number): number;
+    export function fsFlush(fd: number): number;
 
     /**
      *
      */
     //% weight=0 advanced=true shim=files::fsClose
-    function fsClose(fd: number): number;
+    export function fsClose(fd: number): number;
 
     /**
      *
      */
     //% weight=0 advanced=true shim=files::fsRemove
-    function fsRemove(name: string): number;
+    export function fsRemove(name: string): number;
 
     /**
      *
      */
     //% weight=0 advanced=true shim=files::fsSeek
-    function fsSeek(fd: number, offset: number, flags: number): number;
+    export function fsSeek(fd: number, offset: number, flags: number): number;
 
     /**
      *
      */
     //% weight=0 advanced=true shim=files::fsWriteString
-    function fsWriteString(fd: number, text: string): number;
+    export function fsWriteString(fd: number, text: string): number;
 
     /**
      *
      */
     //% weight=0 advanced=true shim=files::fsWriteBuffer
-    function fsWriteBuffer(fd: number, buffer: Buffer): number;
+    export function fsWriteBuffer(fd: number, buffer: Buffer): number;
 
     /**
      */
     //% weight=0 advanced=true shim=files::fsReadBuffer
-    function fsReadBuffer(fd: number, length: number): Buffer;
+    export function fsReadBuffer(fd: number, length: number): Buffer;
 
     /**
      *
      */
     //% weight=0 advanced=true shim=files::fsRead
-    function fsRead(fd: number): number;
+    export function fsRead(fd: number): number;
 }
 
 // Auto-generated. Do not edit. Really.
