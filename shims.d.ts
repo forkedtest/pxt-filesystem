@@ -31,7 +31,7 @@ declare namespace files {
      */
     //% blockId="fs_write_to_serial" block="file %filename|read to serial"
     //% weight=80 shim=files::readToSerial
-    function readToSerial(filename: string): void;
+    export function readToSerial(filename: string): void;
 
     /**
      * Removes the file. There is no undo for this operation.
